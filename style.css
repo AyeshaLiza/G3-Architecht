@@ -89,8 +89,6 @@ main{
 }
 .team-content{
  padding: 0 70px;
-
- ;
 }
 .team-title{
  font-size: 45px;
@@ -101,13 +99,61 @@ main{
 color: #727272;
 }
 
-.feature{
+.team-content .features{
  color: #ff900e;
  font-weight: 700;
 }
-
 /* team section start */
 
+/* facts section */
+.fact-card-container{
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.fact-title{
+    font-size: 45px;
+    padding: 44px 0px;
+}
+.fact-descr{
+  padding-bottom: 30px ;
+}
+.card{
+  border: 1px solid tomato;
+  border-radius: 10px;
+  padding: 40px;
+}
+.card-title{
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+.card-stats{
+  font-size: 2.8rem;
+  color: #424242;
+  margin: 10px 0px;
+}
+/* facts section end */
+
+/* Sponsors section start */
+.sponsors-content{
+  text-align: center;
+}
+.sponsors-title{
+  font-size: 45px;
+  margin: 44px 0;
+}
+.sponsors-img{
+  display: flex;
+  margin-top: 50px;
+  justify-content: space-evenly;
+}
+
+/* sponsors section end */
+
+/* features sectiion start */
+
+/* features sectiion start */
 
 /* Responsive media query */
 /* For Small Device */
@@ -116,13 +162,14 @@ color: #727272;
   width: 70%;
   margin: 0 auto;
  }
- nav{
+ nav {
   flex-direction: column;
  }
  
  nav > ul > li{
   padding: 20px 10px ;
  }
+ /* team section */
  .team-container{
   flex-direction: column-reverse;
  }
@@ -131,6 +178,26 @@ color: #727272;
  }
  .team-img-conainer{
   grid-template-columns: 1fr;
+ }
+ /* fact section */
+ .fact-card-container {
+  flex-direction: column;
+ }
+ .fact-card-container{
+  padding-left: 40px;
+  padding-right: 40px;
+  gap: 40px;
+ }
+ .fact-content{
+  text-align: center;
+ }
+ /* sponsors section */
+ .sponsors-img{
+  flex-direction: column;
+ }
+ .sponsors-img > img{
+  width: 30%;
+  margin: 20px auto;
  }
 }
 /* For medium device */
@@ -159,5 +226,26 @@ color: #727272;
  .team-img-conainer{
   grid-template-columns: 1fr;
  }
+ /* fact section */
+ .fact-card-container {
+  flex-direction: column;
+ }
+ .fact-card-container{
+  padding-left: 40px;
+  padding-right: 40px;
+  gap: 40px;
+ }
+ .fact-content{
+  text-align: center;
+  padding: 0 40px;
+ }
+  /* sponsors section */
+  .sponsors-img{
+    flex-direction: column;
+   }
+   .sponsors-img > img{
+    width: 30%;
+    margin: 15px auto;
+   }
 }
 
