@@ -4,4 +4,142 @@
 
  *{
 font-family: 'Work Sans', sans-serif;
+padding: 0px;
+margin: 0px;
  }
+
+.container{
+ background-color: #FFF4E6;
+ /* height: 200vh; */
+ width: 100%;
+ /* margin: 30px auto; */
+}
+.header-inner{
+ width: 70%;
+ padding: 50px 0px;
+ margin: 0 auto;
+}
+/* /nav bar start */
+nav{
+ display: flex;
+ justify-content: space-between;
+ padding: 40px 0px;
+ /* background-color: aqua; */
+}
+nav > ul{
+ display: flex;
+}
+nav ul li{
+ list-style: none;
+ padding: 20px;
+ font-weight: 500;
+}
+
+.brand{
+ font-size: 45px;
+}
+/* /nav bar end */
+
+/* banner section start */
+.banner{
+ text-align: center;
+ margin: 0 auto;
+ /* max-width: 900px; */
+}
+.title{
+ font-size: 65px;
+ font-weight: 700;
+ padding: 40px 0px ;
+}
+.banner-descr{
+ color: gray;
+ /* padding: 16px 0px; */
+}
+ button{
+ color: white;
+ font-size: 20px;
+ padding: 20px 30px;
+ background-color: #FF900E;
+ border: none;
+ border-radius: 10px;
+ margin: 15px 0px;
+}
+.banner img{
+ width: 100%;
+ margin-top: 20px;
+}
+/* Responsive media query */
+/* For Small Device */
+@media screen and (max-width: 576px){
+ .header-inner{
+  width: 70%;
+  margin: 0 auto;
+ }
+ nav{
+  flex-direction: column;
+ }
+ 
+ nav > ul > li{
+  padding: 20px 10px ;
+ }
+}
+/* For medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+ .header-inner{
+  width: 70%;
+  margin: 0 auto;
+ }
+ nav{
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+ }
+ nav >ul >li{
+  width: 80%;
+  margin: 0 auto;
+ }
+}
+/* banner section start */
+
+/* main section start */
+main{
+ margin: 70px auto;
+}
+/* team section start */
+.team-container{
+ display: flex;
+ align-items: center;
+ mar
+}
+.team-img-conainer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+.team-content{
+ padding: 0 70px;
+
+ ;
+}
+.team-title{
+ font-size: 45px;
+ padding: 44px 0px;
+}
+.Quick-list{
+ font-weight: 500;
+color: #727272;
+}
+
+.feature{
+ color: #ff900e;
+ font-weight: 700;
+}
+.team-descr{
+  font-size: 16;
+  font-weight: 400;
+  color: #727272;
+  padding: 16px 0px;
+}
+/* team section start */
+/* main section start */
