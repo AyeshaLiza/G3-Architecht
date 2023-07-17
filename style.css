@@ -1,13 +1,21 @@
  /* Google fonts Work sans  */
 
  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Work+Sans:wght@400;500;600;700&display=swap');
-
+/* shared styles */
  *{
 font-family: 'Work Sans', sans-serif;
 padding: 0px;
 margin: 0px;
  }
-
+ button{
+  color: white;
+  font-size: 20px;
+  padding: 20px 30px;
+  background-color: #FF900E;
+  border: none;
+  border-radius: 10px;
+  margin: 15px 0px;
+ }
 .container{
  background-color: #FFF4E6;
  /* height: 200vh; */
@@ -55,62 +63,23 @@ nav ul li{
  color: gray;
  /* padding: 16px 0px; */
 }
- button{
- color: white;
- font-size: 20px;
- padding: 20px 30px;
- background-color: #FF900E;
- border: none;
- border-radius: 10px;
- margin: 15px 0px;
-}
+
 .banner img{
  width: 100%;
  margin-top: 20px;
 }
-/* Responsive media query */
-/* For Small Device */
-@media screen and (max-width: 576px){
- .header-inner{
-  width: 70%;
-  margin: 0 auto;
- }
- nav{
-  flex-direction: column;
- }
- 
- nav > ul > li{
-  padding: 20px 10px ;
- }
-}
-/* For medium device */
-@media screen and (min-width: 576px) and (max-width: 992px) {
- .header-inner{
-  width: 70%;
-  margin: 0 auto;
- }
- nav{
-  flex-direction: column;
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
- }
- nav >ul >li{
-  width: 80%;
-  margin: 0 auto;
- }
-}
+
 /* banner section start */
 
 /* main section start */
 main{
+ max-width: 1440px;
  margin: 70px auto;
 }
 /* team section start */
 .team-container{
  display: flex;
  align-items: center;
- mar
 }
 .team-img-conainer{
   display: grid;
@@ -141,5 +110,59 @@ color: #727272;
   color: #727272;
   padding: 16px 0px;
 }
+
 /* team section start */
-/* main section start */
+
+
+/* Responsive media query */
+/* For Small Device */
+@media screen and (max-width: 576px){
+ .header-inner{
+  width: 70%;
+  margin: 0 auto;
+ }
+ nav{
+  flex-direction: column;
+ }
+ 
+ nav > ul > li{
+  padding: 20px 10px ;
+ }
+ .team-container{
+  flex-direction: column-reverse;
+ }
+ .team-content{
+  text-align: center;
+ }
+ .team-img-conainer{
+  grid-template-columns: 1fr;
+ }
+}
+/* For medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+ .header-inner{
+  width: 70%;
+  margin: 0 auto;
+ }
+ nav{
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+ }
+ nav >ul >li{
+  width: 80%;
+  margin: 0 auto;
+ }
+ .team-container{
+  flex-direction: column-reverse;
+ }
+ .team-content{
+  text-align: center;
+  padding: 0 70px;
+ }
+ .team-img-conainer{
+  grid-template-columns: 1fr;
+ }
+}
+
